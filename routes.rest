@@ -1,0 +1,14 @@
+GET http://localhost:8080/contacts/ 
+
+GET http://localhost:8080/contacts/65ac963458dd1a5b353722da
+
+
+
+ 
+
+##
+
+GET https://cse341-ly.onrender.com/contacts 
+
+ 
+
