@@ -1,14 +1,33 @@
+//localhost
+
 GET http://localhost:8080/contacts/ 
+###
+
+GET http://localhost:8080/contacts/65ac963458dd1a5b353722d9
+
+###
 
 GET http://localhost:8080/contacts/65ac963458dd1a5b353722da
 
+###
+
+GET http://localhost:8080/contacts/65ac963458dd1a5b353722db
 
 
+
+//Production Deploy
  
+###
 
-##
+GET https://cse341-ly.onrender.com/contacts  
+###
 
-GET https://cse341-ly.onrender.com/contacts 
+GET https://cse341-ly.onrender.com/contacts/65ac963458dd1a5b353722d9
 
- 
+###
 
+GET https://cse341-ly.onrender.com/contacts/65ac963458dd1a5b353722da
+
+###
+
+GET https://cse341-ly.onrender.com/contacts/65ac963458dd1a5b353722db
