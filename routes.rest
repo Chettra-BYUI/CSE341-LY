@@ -3,15 +3,45 @@
 GET http://localhost:8080/contacts/ 
 ###
 
-GET http://localhost:8080/contacts/65ac963458dd1a5b353722d9
+GET http://localhost:8080/contacts/65b55e340d60a0ef35a31c3c
 
 ###
 
-GET http://localhost:8080/contacts/65ac963458dd1a5b353722da
+GET http://localhost:8080/contacts/65b55e340d60a0ef35a31c3d
 
 ###
 
-GET http://localhost:8080/contacts/65ac963458dd1a5b353722db
+GET http://localhost:8080/contacts/65b55e340d60a0ef35a31c3e
+
+### creat contact
+
+POST http://localhost:8080/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Chettra5",
+    "lastName": "LY",
+    "email": "Chettra@test.com",
+    "favoriteColor": "Purple",
+    "birthday": "07/12/10"
+}
+
+### update contact
+PUT http://localhost:8080/contacts/65b56bf8e9aa2740af9884e9 HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Chettra8",
+    "lastName": "LY",
+    "email": "Chettra@test.com",
+    "favoriteColor": "Purple",
+    "birthday": "07/12/10"
+}
+
+### delte contact
+DELETE http://localhost:8080/contacts/65b56ca1e9aa2740af9884ea
+
+
 
 
 
@@ -22,12 +52,12 @@ GET http://localhost:8080/contacts/65ac963458dd1a5b353722db
 GET https://cse341-ly.onrender.com/contacts  
 ###
 
-GET https://cse341-ly.onrender.com/contacts/65ac963458dd1a5b353722d9
+GET https://cse341-ly.onrender.com/contacts/65b55e340d60a0ef35a31c3c
 
 ###
 
-GET https://cse341-ly.onrender.com/contacts/65ac963458dd1a5b353722da
+GET https://cse341-ly.onrender.com/contacts/65b55e340d60a0ef35a31c3d
 
 ###
 
-GET https://cse341-ly.onrender.com/contacts/65ac963458dd1a5b353722db
+GET https://cse341-ly.onrender.com/contacts/65b55e340d60a0ef35a31c3e
