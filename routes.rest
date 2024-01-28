@@ -6,20 +6,15 @@ GET http://localhost:8080/contacts/
 GET http://localhost:8080/contacts/65b55e340d60a0ef35a31c3c
 
 ###
+ 
 
-GET http://localhost:8080/contacts/65b55e340d60a0ef35a31c3d
-
-###
-
-GET http://localhost:8080/contacts/65b55e340d60a0ef35a31c3e
-
-### creat contact
+### create contact
 
 POST http://localhost:8080/contacts HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "Chettra5",
+    "firstName": "Chettra something",
     "lastName": "LY",
     "email": "Chettra@test.com",
     "favoriteColor": "Purple",
@@ -27,19 +22,19 @@ content-type: application/json
 }
 
 ### update contact
-PUT http://localhost:8080/contacts/65b56bf8e9aa2740af9884e9 HTTP/1.1
+PUT http://localhost:8080/contacts/65b5e5f5de0772405d9b10dd HTTP/1.1
 Content-Type: application/json
 
 {
-    "firstName": "Chettra8",
+    "firstName": "Clever",
     "lastName": "LY",
     "email": "Chettra@test.com",
     "favoriteColor": "Purple",
     "birthday": "07/12/10"
 }
 
-### delte contact
-DELETE http://localhost:8080/contacts/65b56ca1e9aa2740af9884ea
+### delete contact
+DELETE http://localhost:8080/contacts/65b5ec819ee575863cf63da2
 
 
 
@@ -47,19 +42,19 @@ DELETE http://localhost:8080/contacts/65b56ca1e9aa2740af9884ea
 
 //Production Deploy
  
-###
+### All contacts
 
 GET https://cse341-ly.onrender.com/contacts  
 ###
 
 GET https://cse341-ly.onrender.com/contacts/65b55e340d60a0ef35a31c3c
 
-###
+### Create New contact
 POST https://cse341-ly.onrender.com/contacts  HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "Chettra Post",
+    "firstName": "Chettra Post1",
     "lastName": "LY-Send to Render",
     "email": "Chettra@test.com",
     "favoriteColor": "Purple",
@@ -67,16 +62,16 @@ content-type: application/json
 }
 
 ### update contact
-PUT https://cse341-ly.onrender.com/contacts  HTTP/1.1
+PUT https://cse341-ly.onrender.com/contacts/65b5e5f5de0772405d9b10dd  HTTP/1.1
 Content-Type: application/json
 
 {
-    "firstName": "Chettra8",
+    "firstName": "Chettra put",
     "lastName": "LY",
     "email": "Chettra@test.com",
     "favoriteColor": "Purple",
     "birthday": "07/12/10"
 }
-
-### delte contact
-DELETE https://cse341-ly.onrender.com/contacts/65b56ca1e9aa2740af9884ea
+ 
+### delete contact
+DELETE https://cse341-ly.onrender.com/contacts/65b5ec819ee575863cf63da2
